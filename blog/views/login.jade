@@ -1,0 +1,13 @@
+html
+    head 
+        title Login 
+    body 
+        h1 Login 
+        form(action="/login", method="POST")
+            label(for="userid") Userid: 
+            input(type="text", name="userid", id="userid", required)
+            br
+            label(for="password") Password: 
+            input(type="password", name="password", id="password", required)
+            br
+            input(type="submit", value="Login")
